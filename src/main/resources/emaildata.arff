@@ -1,0 +1,10 @@
+@relation emaildata
+
+@attribute Text string
+@attribute Category {spam,ham}
+
+@data
+'Congrats you won lottery',spam
+'very Good',ham
+'Good night',ham
+lottery,spam
