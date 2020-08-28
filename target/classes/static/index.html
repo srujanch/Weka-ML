@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello WebSocket</title>
+    <link href="/bootstrap.min.css" rel="stylesheet">
+    <link href="/main.css" rel="stylesheet">
+    <script src="/jquery-1.10.2.min.js"></script>
+    <script src="/app.js"></script>
+    <script src="/stomp.js"></script>
+    
+</head>
+<body>
+<noscript><h2 style="color: #ff0000">Seems your browser doesn't support Javascript! Websocket relies on Javascript being
+    enabled. Please enable
+    Javascript and reload this page!</h2></noscript>
+<div id="main-content" class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="connect">WebSocket connection:</label>
+                    <button id="connect" class="btn btn-default" type="submit">Connect</button>
+                    <button id="disconnect" class="btn btn-default" type="submit" disabled="disabled">Disconnect
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="name">Gender</label>
+                    <input type="text" id="male" class="form-control" placeholder="Enter Gender">
+                </div>
+                
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="text" id="age" class="form-control" placeholder="age">
+                </div>
+                
+                  <div class="form-group">
+                    <label for="education">Education</label>
+                    <input type="text" id="education" class="form-control" placeholder="Education..">
+                </div>
+                
+                  <div class="form-group">
+                    <label for="currentSmoker">Current Smoker</label>
+                    <input type="text" id="currentSmoker" class="form-control" placeholder="Current Smoker..">
+                </div>
+                
+                  <div class="form-group">
+                    <label for="cigsPerDay">Cigs Per Day</label>
+                    <input type="text" id="cigsPerDay" class="form-control" placeholder="Cigs Per Day..">
+                </div>
+                
+                  <div class="form-group">
+                    <label for="bpmeds">BPMeds</label>
+                    <input type="text" id="bpmeds" class="form-control" placeholder="BPMeds..">
+                </div>
+                
+                  <div class="form-group">
+                    <label for="prevalentStroke">Prevalent Stroke</label>
+                    <input type="text" id="prevalentStroke" class="form-control" placeholder="Prevalent Stroke..">
+                </div>
+                
+                  <div class="form-group">
+                    <label for="prevalentHyp">PrevalentHyp</label>
+                    <input type="text" id="prevalentHyp" class="form-control" placeholder="PrevalentHyp..">
+                </div>
+                
+                  <div class="form-group">
+                    <label for="diabetes">Diabetes</label>
+                    <input type="text" id="diabetes" class="form-control" placeholder="Diabetes..">
+                </div>
+                
+                  <div class="form-group">
+                    <label for="totChol">Total Cholestrol</label>
+                    <input type="text" id="totChol" class="form-control" placeholder="Prevalent Stroke..">
+                </div>
+                
+                
+                     <div class="form-group">
+                    <label for="sysBP">sysBP</label>
+                    <input type="text" id="sysBP" class="form-control" placeholder="sysBP..">
+                </div>
+                
+                  <div class="form-group">
+                    <label for="diaBP">diaBP</label>
+                    <input type="text" id="diaBP" class="form-control" placeholder="diaBP..">
+                </div>
+                
+              
+                
+                  <div class="form-group">
+                    <label for="BMI">BMI</label>
+                    <input type="text" id="BMI" class="form-control" placeholder="BMI..">
+                </div>
+                
+                     <div class="form-group">
+                    <label for="heartRate">heartRate</label>
+                    <input type="text" id="heartRate" class="form-control" placeholder="heartRate..">
+                </div>
+                
+                  <div class="form-group">
+                    <label for="glucose">glucose</label>
+                    <input type="text" id="glucose" class="form-control" placeholder="glucose">
+                </div>
+                
+               
+                <button id="send" class="btn btn-default" type="button">Send</button>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table id="conversation" class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Predicted Value</th>
+                </tr>
+                </thead>
+                <tbody id="greetings">
+                </tbody>
+            </table>
+        </div>
+    </div>
+ 
+</div>
+</body>
+</html>
